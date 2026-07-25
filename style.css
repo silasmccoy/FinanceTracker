@@ -1,0 +1,111 @@
+body {
+    background-color: #E3D5CA;
+    font-family: sans-serif, verdana;
+    margin: 1px;
+    padding: 1px;
+}
+
+input, select{
+    margin: 3px;
+    padding: 3px;
+}
+
+h1 {
+    color: #4A6250;
+    margin: 15px;
+}
+
+h2 {
+    color: #4A6250;
+    margin: 10px;
+}
+
+form {
+    margin: 10px;
+    padding: 10px;
+}
+
+
+#balance {
+    color: rgb(62, 62, 123);
+    margin: 15px;
+    padding: 0px;
+}
+
+
+#income {
+    color: rgb(63, 106, 63);
+    margin: 15px;
+    padding: 0px;
+}
+
+#expense {
+    color: rgb(149, 71, 71);
+    margin: 15px;
+    padding: 0px;
+}
+
+li {
+    list-style-type: none;
+    margin-left: 20px;
+    width: max-content;
+}
+
+#add-button {
+    margin: 5px;
+    padding: 5px 15px; 
+    background-color: #4A6250;
+    color: white;
+    border: none;
+}
+
+.form-heading {
+    color: #4A6250;
+    display: flex;
+    align-items: center;
+}
+
+.gap-large {
+    margin-left: 25px;
+    margin-right: 110px;
+}
+
+.gap-medium {
+    margin-right: 85px;
+}
+
+.close-btn {
+    margin: 5px;
+    padding: 4px 6px; 
+    background-color: #4A6250;
+    color: white;
+    border: none;
+}
+
+.close-btn:hover {
+    background-color: #8FAE8B;
+}
+
+#transaction-form * {
+    margin-top: 4px;
+    margin-bottom: 1px;
+}
+
+.transaction-text, .type-tag {
+    text-transform: capitalize; 
+    
+}
+
+.history-heading * {
+    margin-top: 4px;
+    margin-bottom: -10px;
+}
+
+
+/* colors 
+4A6250
+8FAE8B
+EFE7DD
+C3D1B5
+F2F2F0
+*/

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Tracker</title>
+</head>
+<body>
+    <div id="title">
+        <h1>Finance Tracker</h1>
+    </div>
+
+    <div id="summary">
+        <h2 id="balance">Balance: $0.00</h2>
+        <h2 id="income">Income: $0.00</h2>
+        <h2 id="expense">Expenses: $0.00</h2>
+    </div>
+
+    <div id="transaction-form">
+        <h1>Add Transaction</h1>
+        
+        <div class="form-heading">
+            <h3>Date</h3>
+            <h3>Description</h3>
+            <h3>Amount</h3>
+            <h3>Type</h3>
+            <h3>Category</h3>
+        </div>
+
+        <form id="form">
+            <input type="date" id="date">
+            <input type="text" id="description" placeholder="description">
+            <input type="number" id="amount" step="0.01" placeholder="amount">
+            <select id="type">
+                <option value="" disabled selected hidden>Select type</option>
+                <option value="expense">Expense</option>
+                <option value="income">Income</option>
+            </select>
+            <select id="category">
+                <option value="" disabled selected hidden>Select a category</option>
+                <option value="groceries">Groceries</option>
+                <option value="dining-out">Dining Out</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="coffee">Coffee</option>
+                <option value="car-payment">Car Payment</option>
+                <option value="gas">Gas</option>
+                <option value="loans">Loans</option>
+                <option value="living-expenses">Living Expenses</option>
+                <option value="utilities">Utilities</option>
+                <option value="general-expense">General Expense</option>
+                <option value="paycheck">Paycheck</option>
+                <option value="gift">Gift</option>
+                <option value="cash">Cash</option>
+                <option value="other-income">Other Income</option>
+            </select>
+            <button type="submit" id="add-button">Add</button>
+        </form>
+    </div>
+
+    <div class="history-heading">
+        <h1>Transaction History</h1>
+    </div>
+
+    <div id="history">
+        <div class="transaction-heading">
+            <h3>Date</h3>
+            <h3>Description</h3>
+            <h3>Amount</h3>
+            <h3>Type</h3>
+            <h3>Category</h3>
+        </div>
+        <ul id="transaction-list"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
